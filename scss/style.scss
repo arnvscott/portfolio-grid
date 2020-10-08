@@ -1,0 +1,21 @@
+/* */
+
+// 1. Config
+// 2. Vendors
+// 3. Base stuff
+// 4. Components
+// 5. Layout-related sections
+// 6. Page-specific styles
+// 7. Site-specific styles eg. themes
+// 8. Shame styles
+
+@charset "UTF-8";
+
+@use 'config';
+@use "vendors";
+@use "base";
+@use "components";
+@use "layouts";
+@use "pages";
+@use "site";
+@use "shame";

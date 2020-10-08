@@ -1,0 +1,27 @@
+/*  || Introduction Section Layout */
+/*  ------------------------------ */
+
+@use "../abstracts/variables" as var;
+
+.introduction {
+
+    &__body {
+        margin-top: 4rem;
+        line-height: 1.7;
+        font-family: var.$body-font-family;
+        font-size: var.$font-size-medium;
+        font-weight: var.$font-weight-normal;
+    }
+
+    &__btn {
+        padding: 1em;
+        margin-top: 2em;
+        font-family: var.$body-font-family;
+        font-size: var.$font-size-small;
+        font-weight: var.$font-weight-bold;
+    }
+
+    &__btn i {
+        margin-right: 0.5em;
+    }
+}

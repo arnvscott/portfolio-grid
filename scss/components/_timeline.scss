@@ -1,0 +1,54 @@
+/*  || Timeline Component    */
+/*  ------------------------ */
+
+@use "../abstracts/variables" as var;
+
+$_dot-size: 1.2rem;
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    &__item {
+        padding: 0 0 3em 2em;
+        border-left: 2px solid var.$primary-color;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    
+    &__dot {
+        width: $_dot-size;
+        height: $_dot-size;
+        padding: 0;
+        border: 2px var.$primary-color solid;
+        border-radius: 50%;
+        margin: 0;
+        position: absolute;
+        left: 12px;
+        background-color: var.$white;
+    }
+
+    &__site {
+        margin-bottom: 0.5em;
+        color: var.$primary-color;
+        font-family: var.$heading-font-family;
+        font-size: var.$font-size-small;
+        font-weight: var.$font-weight-bold;
+    }
+
+    &__year {
+        margin-bottom: 0.7em;
+        font-family: var.$heading-font-family;
+        font-size: var.$font-size-small; 
+        font-weight: var.$font-weight-normal;
+    }
+
+    &__detail {
+        font-family: var.$body-font-family;
+        font-size: var.$font-size-medium;
+        line-height: 1.7;  
+    }
+}

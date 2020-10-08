@@ -1,0 +1,17 @@
+/*  || Btn Component */
+/*  ------------------------- */
+
+@use "../abstracts/variables" as var;
+
+.btn {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    border-radius: 20px;
+    background-color: var.$primary-color;
+    color: var.$white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten(var.$primary-color, 7);
+    }
+}

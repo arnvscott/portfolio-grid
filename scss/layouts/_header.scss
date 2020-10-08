@@ -1,0 +1,43 @@
+/*  || Header Section Layout */
+/*  ------------------------ */
+
+@use "../abstracts/variables" as var;
+
+.header {
+    background-color: var.$primary-color;
+    color: var.$white;
+
+    &__title {
+        margin-top: 1em;
+        font-size: var.$font-size-largest;
+        font-weight: var.$font-weight-bold;
+    }
+
+    &__subtitle {
+        margin-top: 1em;
+        font-size: var.$font-size-medium;
+        font-weight: var.$font-weight-normal;
+    }
+
+    &__contact-info {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    &__social-icons {
+        list-style-type: none;
+        display: flex;
+        li {
+            margin-right: 1.5em;
+        }
+    }
+
+    &__social-icon {
+            color: var.$white;
+            opacity: var.$light-opacity;
+            font-size: var.$icon-size-medium;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

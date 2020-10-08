@@ -1,0 +1,34 @@
+/*  || Testimonials Section Layout */
+/*  ------------------------------ */
+
+@use "../abstracts/variables" as var;
+
+
+.testimonials {
+
+    background-color: var.$primary-color;
+    color: var.$white;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__circle {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: var.$white;
+        position: absolute;
+        top: 1em;
+
+        i {
+            display: block;
+            color: var.$primary-color;
+        }
+    }
+
+
+
+}
