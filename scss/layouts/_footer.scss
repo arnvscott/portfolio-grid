@@ -1,0 +1,32 @@
+/*  || Footer Section Layout */
+/*  ------------------------ */
+
+@use "../abstracts/variables" as var;
+
+
+.footer {
+    background-color: var.$primary-color;
+    color: var.$white;
+
+    &__contact-wrapper {
+    }
+
+    &__contact-info {
+        margin-bottom: 2em;
+    }
+
+    &__social-icon-list {
+        list-style-type: none;
+    }
+
+    &__social-icon-item {
+        margin-bottom: 1.5em;
+    }
+
+    &__social-icon-link {
+        color: var.$white;
+        font-size: var.$font-size-medium;
+        font-weight: var.$font-weight-normal;
+        font-family: var.$body-font-family;
+    }
+}

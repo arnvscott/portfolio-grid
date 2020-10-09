@@ -3,6 +3,7 @@
 
 @use "../abstracts/variables" as var;
 
+$_circle_diameter: 80px;
 
 .testimonials {
 
@@ -13,22 +14,89 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        position: relative;
+        margin-bottom: 1em;
     }
 
     &__circle {
-        height: 60px;
-        width: 60px;
+        height: $_circle_diameter;
+        width: $_circle_diameter;
         border-radius: 50%;
         background-color: var.$white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        top: 1em;
-
-        i {
-            display: block;
-            color: var.$primary-color;
-        }
+        top: -($_circle_diameter / 2);
+    }
+        
+    &__quotes {
+        padding-top: 1.7em;
+        color: var.$primary-color;
     }
 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
 
+    &__title {
+        font-size: var.$font-size-large;
+        font-weight: var.$font-weight-normal;
+        margin-bottom: 1em;
+    }
+
+    &__subtitle {
+        font-size: var.$font-size-medium;
+        font-weight: var.$font-weight-normal;
+        font-family: var.$body-font-family;
+        font-style: italic;
+        padding-bottom: 1.2em;
+        border-bottom: 1px solid yellow;
+        margin-bottom: 1.5em;
+        opacity: var.$light-opacity;
+    }
+
+    &__carousel {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    &__page-left {
+        font-size: var.$icon-size-medium;
+        font-weight: var.$font-weight-bold;
+        opacity: var.$light-opacity;
+    }
+
+    &__body {
+        font-size: var.$font-size-large;
+        font-weight: var.$font-weight-normal;
+        font-family: var.$body-font-family;
+        line-height: 1.7;
+    }
+
+    &__page-right {
+        font-size: var.$icon-size-medium;
+        font-weight: var.$font-weight-bold;
+        opacity: var.$light-opacity;
+    }
+
+    &__dots-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__dot {
+        height: 8px;
+        width: 8px;
+        border: 1px solid var.$white;
+        border-radius: 50%;
+        margin-right: 5px;
+
+        &--filled {
+            background-color: var.$white;
+        }
+    }
 
 }

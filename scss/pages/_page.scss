@@ -16,11 +16,11 @@
     &__section-title {
         font-size: var.$section-title-font-size;
         font-weight: var.$font-weight-normal;
+        margin-bottom: 1em;
     }
 
     &__section-subtitle {
         margin-bottom: 2.5em;
-        // font-family: var.$heading-font-family;
         font-size: var.$font-size-small;
         letter-spacing: 0.5rem;
     }

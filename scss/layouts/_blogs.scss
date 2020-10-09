@@ -1,0 +1,18 @@
+/*  || Blogs Section Layout */
+/*  ----------------------- */
+
+@use "../abstracts/variables" as var;
+
+.blogs {
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__item {
+        margin-bottom: 2em;
+    }
+
+}
