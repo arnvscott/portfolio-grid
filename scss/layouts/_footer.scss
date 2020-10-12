@@ -8,6 +8,11 @@
     background-color: var.$primary-color;
     color: var.$white;
 
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
     &__contact-wrapper {
     }
 
@@ -17,6 +22,7 @@
 
     &__social-icon-list {
         list-style-type: none;
+        margin-bottom: 2.5em;
     }
 
     &__social-icon-item {
@@ -29,4 +35,27 @@
         font-weight: var.$font-weight-normal;
         font-family: var.$body-font-family;
     }
+
+    &__subtitle {
+        margin-bottom: 1em;
+    }
+
+    &__contact-form {
+        margin-bottom: 3.3em;
+    }
+
+    &__contact-form-btn {
+        font-size: var.$font-size-medium;
+        background-color: darken(var.$primary-color, 7);
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+    }
+
+    &__copyright {
+        opacity: 0.6;
+        text-align: center;
+    }
 }
+
+
