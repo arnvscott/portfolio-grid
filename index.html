@@ -15,21 +15,34 @@
 
 <body>
     <div class="page">
+        <nav class="menu" id="main-nav">
+            <div class="page__container">
+                <div><a href="javascript:void(0)" class="menu__close-btn" onclick="closeNav()">&times;</a></div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__item-link">HELLO</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">RESUME</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">PORTFOLIO</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">TESTIMONIALS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">BLOG</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
         <section class="header">
             <div class="page__container">
-                <i class="fas fa-bars"></i>
+                <div><a href="javascript:void(0)" class="header__menu-btn" onclick="openNav()">&#9776;</a></div>
                 <h1 class="header__title">John Anderson</h1>
                 <h2 class="header__subtitle">full stack developer, mobile app developer</h2>
-                <div class="contact-info header__contact-info">
-                    <div class="contact-info__name">AGE: </div>
-                    <div>25</div>
-                    <div class="contact-info__name">PHONE:</div>
-                    <div>+61 (4) 888-1234</div>
-                    <div class="contact-info__name">EMAIL:</div>
-                    <div>mail@mail.com</div>
-                    <div class="contact-info__name">ADDRESS:</div>
-                    <div>Brisbane Queensland, 4000 Australia</div>
-                </div>
+                <dl class="contact-info header__contact-info">
+                    <dt class="contact-info__name">AGE: </dt>
+                    <dd>25</dd>
+                    <dt class="contact-info__name">PHONE:</dt>
+                    <dd>+61 (4) 888-1234</dd>
+                    <dt class="contact-info__name">EMAIL:</dt>
+                    <dd>mail@mail.com</dd>
+                    <dt class="contact-info__name">ADDRESS:</dt>
+                    <dd>Brisbane Queensland, 4000 Australia</dd>
+                </dl>
                 <ul class="header__social-icons">
                     <li><a href="#" class="header__social-icon"><i class="fab fa-github"></i></a></li>
                     <li><a href="#" class="header__social-icon"><i class="fab fa-linkedin"></i></a></li>
@@ -355,6 +368,7 @@
             </div>
         </section>
     </div>
+    <script src="scripts/main.js"></script>
 
 </body>
 
