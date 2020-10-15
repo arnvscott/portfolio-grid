@@ -3,13 +3,15 @@
 
 @use "../abstracts/variables" as var;
 
-.menu {
+.mobile-menu {
 
     width: 0;
     height: 100%;
     background-color: rgba(0,0,0,.8);
     opacity: 1;
     position: fixed;
+    top: 0;
+    left: 0;
     overflow-x: hidden;
     z-index: 1;
     transition-duration: 250ms;
@@ -23,6 +25,7 @@
         color: var.$white;
         position: absolute;
         top: 37px;
+        left: 18px;
         text-decoration: none;
     }
 

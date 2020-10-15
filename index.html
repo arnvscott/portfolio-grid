@@ -15,22 +15,35 @@
 
 <body>
     <div class="page">
-        <nav class="menu" id="main-nav">
+        <div class="main-menu" id="main-menu">
             <div class="page__container">
-                <div><a href="javascript:void(0)" class="menu__close-btn" onclick="closeNav()">&times;</a></div>
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#introduction" class="menu__item-link" onclick="closeNav()">HELLO</a></li>
-                    <li class="menu__item"><a href="#resume" class="menu__item-link" onclick="closeNav()">RESUME</a></li>
-                    <li class="menu__item"><a href="#portfolio" class="menu__item-link" onclick="closeNav()">PORTFOLIO</a></li>
-                    <li class="menu__item"><a href="#testimonials" class="menu__item-link" onclick="closeNav()">TESTIMONIALS</a></li>
-                    <li class="menu__item"><a href="#blogs" class="menu__item-link" onclick="closeNav()">BLOG</a></li>
-                    <li class="menu__item"><a href="#footer" class="menu__item-link" onclick="closeNav()">CONTACT</a></li>
-                </ul>
+                <a class="main-menu__open-btn" id="main-menu__open-btn" href="javascript:void(0)"
+                    onclick="openNav()">&#9776;</a>
             </div>
+        </div>
+        <nav class="mobile-menu" id="main-nav">
+            <div><a href="javascript:void(0)" class="mobile-menu__close-btn" onclick="closeNav()">&times;</a></div>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#introduction" class="mobile-menu__item-link"
+                        onclick="closeNav()">HELLO</a>
+                </li>
+                <li class="mobile-menu__item"><a href="#resume" class="mobile-menu__item-link"
+                        onclick="closeNav()">RESUME</a>
+                </li>
+                <li class="mobile-menu__item"><a href="#portfolio" class="mobile-menu__item-link"
+                        onclick="closeNav()">PORTFOLIO</a>
+                </li>
+                <li class="mobile-menu__item"><a href="#testimonials" class="mobile-menu__item-link"
+                        onclick="closeNav()">TESTIMONIALS</a></li>
+                <li class="mobile-menu__item"><a href="#blogs" class="mobile-menu__item-link"
+                        onclick="closeNav()">BLOG</a></li>
+                <li class="mobile-menu__item"><a href="#footer" class="mobile-menu__item-link"
+                        onclick="closeNav()">CONTACT</a>
+                </li>
+            </ul>
         </nav>
         <section class="header">
             <div class="page__container">
-                <div><a href="javascript:void(0)" class="header__menu-btn" onclick="openNav()">&#9776;</a></div>
                 <h1 class="header__title">John Anderson</h1>
                 <h2 class="header__subtitle">full stack developer, mobile app developer</h2>
                 <dl class="contact-info header__contact-info">
@@ -56,8 +69,10 @@
                 <p class="introduction__body">
                     I am Junior Web developer able to build a Web presence from the ground up - from concept,
                     navigation,
-                    layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code
-                    using current best practices in Web development. Fast learner, hard worker and team player who is
+                    layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient
+                    code
+                    using current best practices in Web development. Fast learner, hard worker and team player who
+                    is
                     proficient in an array of scripting languages and multimedia Web tools.
                 </p>
                 <a href="#" class="btn introduction__btn"><i class="fas fa-download"></i>DOWNLOAD CV</a>
@@ -69,9 +84,11 @@
                 <p class="resume__body">
                     Lorem ipsum dolor sit amet, communication adipisicing elit, helpful eiusmod tempor incididunt ut
                     labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris nisi
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris
+                    nisi
                     ut
-                    honest ea commodo consequat. Duis aute irure dolor in upper-intermediate english level velit dolore
+                    honest ea commodo consequat. Duis aute irure dolor in upper-intermediate english level velit
+                    dolore
                     eu
                     ivivdtevoluptatem ontend developer.</p>
             </div>
@@ -92,7 +109,8 @@
                         <h4 class="timeline__year">2004 - 2005</h4>
                         <p class="timeline__detail">
                             Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing
-                            elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim
                             veniam, quis</p>
                     </li>
                     <li class="timeline__item">
@@ -121,7 +139,8 @@
                         <h4 class="timeline__site">TECH UNIVERSITY</h4>
                         <h4 class="timeline__year">2004 - 2005</h4>
                         <p class="timeline__detail">
-                            Awesome developer, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius-
+                            Awesome developer, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do
+                            eius-
                             mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                             veniam, quis</p>
                     </li>
@@ -206,8 +225,10 @@
                         <div class="tagged-card">
                             <h3 class="tagged-card__title">MOBILE AND DESKTOP APP FOR LONDON HOTEL STORE</h3>
                             <p class="tagged-card__body projects__tagged-card-body">
-                                Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of
-                                no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these
+                                Do answered bachelor occasion in of offended no concerns. Supply worthy warmth
+                                branch of
+                                no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use
+                                these
                                 smart rooms ham</p>
                             <h4 class="tagged-card__label projects__tagged-card-label">USED STACK:</h4>
                             <ul class="tagged-card__tag-list">
@@ -225,8 +246,10 @@
                         <div class="tagged-card">
                             <h3 class="tagged-card__title">WEB APP PAGE TRAVEL COMPANY</h3>
                             <p class="tagged-card__body projects__tagged-card-body">
-                                Preference any astonished unreserved mrs. Prosperous understood middletons in conviction
-                                an uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill
+                                Preference any astonished unreserved mrs. Prosperous understood middletons in
+                                conviction
+                                an uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am
+                                hill
                                 from mr</p>
                             <h4 class="tagged-card__label projects__tagged-card-label">USED STACK:</h4>
                             <ul class="tagged-card__tag-list">
@@ -244,8 +267,10 @@
                         <div class="tagged-card">
                             <h3 class="tagged-card__title">ADMIN TEMPLATE FOR PHOTO SERVICE</h3>
                             <p class="tagged-card__body projects__tagged-card-body">
-                                Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of
-                                no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these
+                                Do answered bachelor occasion in of offended no concerns. Supply worthy warmth
+                                branch of
+                                no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use
+                                these
                                 smart rooms ham.</p>
                             <h4 class="tagged-card__label projects__tagged-card-label">USED STACK:</h4>
                             <ul class="tagged-card__tag-list">
@@ -277,9 +302,11 @@
                             Up or well must less rent read walk so be. Easy sold at do hour sing spot. Any meant has
                             cease
                             too
-                            the decay. Since party burst am it match. By or blushes between besides offices noisier as.
+                            the decay. Since party burst am it match. By or blushes between besides offices noisier
+                            as.
                             Sending
-                            do brought winding compass in. Easy sold at do hour sing spot less rent read walk so be. Any
+                            do brought winding compass in. Easy sold at do hour sing spot less rent read walk so be.
+                            Any
                             meant
                             has cease too the decay.
                         </p>
@@ -304,29 +331,34 @@
                             <h4 class="blog-card__subtitle">OCTOBER 22,2017</h4>
                             <h3 class="blog-card__title">HOW TO USE A CSS PREPROCESSOR</h3>
                             <p class="blog-card__body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae incidunt
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae
+                                incidunt
                                 ad nulla rerum dolore eaque, explicabo vel laudantium.
                             </p>
                         </div>
                     </li>
                     <li class="blog-card blogs__item">
-                        <img class="blog-card__image" src="assets/images/christopher-gower-m_HRfLhgABo-unsplash.png" alt="">
+                        <img class="blog-card__image" src="assets/images/christopher-gower-m_HRfLhgABo-unsplash.png"
+                            alt="">
                         <div class="blog-card__wrapper">
                             <h4 class="blog-card__subtitle">OCTOBER 22,2017</h4>
                             <h3 class="blog-card__title">HOW I ORGANISE MY WORK WITH CODE</h3>
                             <p class="blog-card__body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae incidunt
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae
+                                incidunt
                                 ad nulla rerum dolore eaque, explicabo vel laudantium.
                             </p>
                         </div>
                     </li>
                     <li class="blog-card blogs__item">
-                        <img class="blog-card__image" src="assets/images/alexander-andrews-zw07kVDaHPw-unsplash.png" alt="">
+                        <img class="blog-card__image" src="assets/images/alexander-andrews-zw07kVDaHPw-unsplash.png"
+                            alt="">
                         <div class="blog-card__wrapper">
                             <h4 class="blog-card__subtitle">OCTOBER 22,2017</h4>
                             <h3 class="blog-card__title">SVG SPRITES VSICON FONT</h3>
                             <p class="blog-card__body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae incidunt
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae
+                                incidunt
                                 ad nulla rerum dolore eaque, explicabo vel laudantium.
                             </p>
                         </div>
@@ -348,21 +380,25 @@
                             <div>janderson.email.com</div>
                         </div>
                         <ul class="footer__social-icon-list">
-                            <li class="footer__social-icon-item"><a href="#" class="footer__social-icon-link">Facebook</a></li>
-                            <li class="footer__social-icon-item"><a href="#" class="footer__social-icon-link">LinkedIn</a></li>
-                            <li class="footer__social-icon-item"><a href="#" class="footer__social-icon-link">Github</a></li>
-                            <li class="footer__social-icon-item"><a href="#" class="footer__social-icon-link">BitBucket</a></li>
+                            <li class="footer__social-icon-item"><a href="#"
+                                    class="footer__social-icon-link">Facebook</a></li>
+                            <li class="footer__social-icon-item"><a href="#"
+                                    class="footer__social-icon-link">LinkedIn</a></li>
+                            <li class="footer__social-icon-item"><a href="#" class="footer__social-icon-link">Github</a>
+                            </li>
+                            <li class="footer__social-icon-item"><a href="#"
+                                    class="footer__social-icon-link">BitBucket</a></li>
                         </ul>
                     </div>
                     <div class="footer__form-wrapper">
                         <form class="contact-form footer__contact-form" action="">
                             <h4 class="footer__subtitle">Or just wrote me a letter here</h4>
-                            <input class="contact-form__input-text" type="text" placeholder="Your name">                 
-                            <input class="contact-form__input-text" type="email" placeholder="Your e-mail">                 
+                            <input class="contact-form__input-text" type="text" placeholder="Your name">
+                            <input class="contact-form__input-text" type="email" placeholder="Your e-mail">
                             <textarea class="contact-form__input-textarea">Type the message here</textarea>
                             <button class="btn footer__contact-form-btn">SEND</button>
                         </form>
-                        <h4 class="footer__copyright">&copy;&nbsp;2016 Ivan Susanin. All Rights Reserved</h4>              
+                        <h4 class="footer__copyright">&copy;&nbsp;2016 Ivan Susanin. All Rights Reserved</h4>
                     </div>
                 </div>
             </div>
