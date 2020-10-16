@@ -1,7 +1,8 @@
 /*  || Blog Card Component         */
 /*  ------------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
 
 .blog-card {
 
@@ -12,29 +13,29 @@
     &__wrapper {
         padding: 1em;
         padding-bottom: 2.4em;
-        border: 1px solid #f1f1f1
+        border: 1px solid c.$light-grey;
     }
 
     &__title {
-        font-size: var.$font-size-small;
-        font-weight: var.$font-weight-bold;
-        color: #555;
         margin-bottom: 1em;
+        font-size: f.$small;
+        font-weight: f.$bold;
+        color: c.$dark-grey;
     }
 
     &__subtitle {
-        font-size: var.$font-size-xsmall;
-        font-weight: var.$font-weight-normal;
-        font-family: var.$body-font-family;
-        color: #999;
         margin-bottom: 0.7em;
+        font-size: f.$xsmall;
+        font-weight: f.$normal;
+        font-family: f.$body;
+        color: c.$medium-grey;
     }
 
     &__body {
-        font-size: var.$font-size-small;
-        font-family: var.$body-font-family;
-        color: #999;
+        font-size: f.$small;
+        font-family: f.$body;
         line-height: 1.4;
+        color: c.$medium-grey;
 
     }
 }

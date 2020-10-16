@@ -1,4 +1,7 @@
-@use "../abstracts/variables" as var;
+/*  || Skills Section Layout */
+/*  ------------------------ */
+
+@use "../abstracts/variables/fonts" as f;
 
 .skills {
 
@@ -9,6 +12,6 @@
 
     &__progress-bar {
         margin-bottom: 1.7em;
-        font-size: var.$font-size-small;
+        font-size: f.$small;
     }
 }

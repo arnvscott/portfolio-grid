@@ -1,18 +1,18 @@
 /*  || Btn Component */
 /*  ------------------------- */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/colors" as c;
 
 .btn {
-    display: inline-block;
     padding: 0.7em 1.5em;
     border: 0;
     border-radius: 20px;
-    background-color: var.$primary-color;
-    color: var.$white;
+    display: inline-block;
+    background-color: c.$primary;
+    color: c.$white;
     text-decoration: none;
 
     &:hover {
-        background-color: lighten(var.$primary-color, 7);
+        background-color: lighten(c.$primary, 7);
     }
 }

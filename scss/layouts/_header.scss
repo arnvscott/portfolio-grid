@@ -1,22 +1,23 @@
 /*  || Header Section Layout */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/colors" as c;
+@use "../abstracts/variables/fonts" as f;
 
 .header {
-    background-color: var.$primary-color;
-    color: var.$white;
+    background-color: c.$primary;
+    color: c.$white;
 
     &__title {
         margin-top: 1.7em;
-        font-size: var.$font-size-largest;
-        font-weight: var.$font-weight-bold;
+        font-size: f.$largest;
+        font-weight: f.$bold;
     }
 
     &__subtitle {
         margin-top: 1em;
-        font-size: var.$font-size-medium;
-        font-weight: var.$font-weight-normal;
+        font-size: f.$medium;
+        font-weight: f.$normal;
     }
 
     &__contact-info {
@@ -33,9 +34,9 @@
     }
 
     &__social-icon {
-            color: var.$white;
-            opacity: var.$light-opacity;
-            font-size: var.$icon-size-medium;
+            font-size: f.$xlarge;
+            color: c.$white;
+            opacity: c.$light-opacity;
         &:hover {
             opacity: 1;
         }

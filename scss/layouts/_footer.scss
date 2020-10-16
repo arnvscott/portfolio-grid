@@ -1,12 +1,13 @@
 /*  || Footer Section Layout */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
 
 
 .footer {
-    background-color: var.$primary-color;
-    color: var.$white;
+    background-color: c.$primary;
+    color: c.$white;
 
     &__wrapper {
         display: flex;
@@ -21,8 +22,8 @@
     }
 
     &__social-icon-list {
-        list-style-type: none;
         margin-bottom: 2.5em;
+        list-style-type: none;
     }
 
     &__social-icon-item {
@@ -30,10 +31,10 @@
     }
 
     &__social-icon-link {
-        color: var.$white;
-        font-size: var.$font-size-medium;
-        font-weight: var.$font-weight-normal;
-        font-family: var.$body-font-family;
+        font-family: f.$body;
+        font-size: f.$medium;
+        font-weight: f.$normal;
+        color: c.$white;
     }
 
     &__subtitle {
@@ -45,16 +46,16 @@
     }
 
     &__contact-form-btn {
-        font-size: var.$font-size-medium;
-        background-color: darken(var.$primary-color, 7);
+        width: 100%;
         padding-top: 1em;
         padding-bottom: 1em;
-        width: 100%;
+        background-color: darken(c.$primary, 7);
+        font-size: f.$medium;
     }
 
     &__copyright {
-        opacity: 0.6;
         text-align: center;
+        opacity: c.$light-opacity;
     }
 }
 

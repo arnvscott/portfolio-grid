@@ -1,61 +1,62 @@
 /*  || Testimonials Section Layout */
 /*  ------------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
 
-$_circle_diameter: 80px;
+$_circle_diameter: 8rem;
 
 .testimonials {
 
-    background-color: var.$primary-color;
-    color: var.$white;
+    background-color: c.$primary;
+    color: c.$white;
 
     &__header {
+        position: relative;
+        margin-bottom: 1em;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        position: relative;
-        margin-bottom: 1em;
     }
 
     &__circle {
-        height: $_circle_diameter;
+        position: absolute;
+        top: -($_circle_diameter / 2);
         width: $_circle_diameter;
+        height: $_circle_diameter;
         border-radius: 50%;
-        background-color: var.$white;
+        background-color: c.$white;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: -($_circle_diameter / 2);
     }
         
     &__quotes {
         padding-top: 1.7em;
-        color: var.$primary-color;
+        color: c.$primary;
     }
 
     &__wrapper {
+        margin-bottom: 1em;
         display: flex;
         align-items: center;
-        margin-bottom: 1em;
     }
 
     &__title {
-        font-size: var.$font-size-large;
-        font-weight: var.$font-weight-normal;
         margin-bottom: 1em;
+        font-size: f.$large;
+        font-weight: f.$normal;
     }
 
     &__subtitle {
-        font-size: var.$font-size-medium;
-        font-weight: var.$font-weight-normal;
-        font-family: var.$body-font-family;
-        font-style: italic;
         padding-bottom: 1.2em;
         border-bottom: 1px solid yellow;
         margin-bottom: 1.5em;
-        opacity: var.$light-opacity;
+        font-family: f.$body;
+        font-size: f.$medium;
+        font-weight: f.$normal;
+        font-style: italic;
+        opacity: c.$light-opacity;
     }
 
     &__carousel {
@@ -64,22 +65,22 @@ $_circle_diameter: 80px;
     }
 
     &__page-left {
-        font-size: var.$icon-size-medium;
-        font-weight: var.$font-weight-bold;
-        opacity: var.$light-opacity;
+        font-size: f.$xlarge;
+        font-weight: f.$bold;
+        opacity: c.$light-opacity;
     }
 
     &__body {
-        font-size: var.$font-size-large;
-        font-weight: var.$font-weight-normal;
-        font-family: var.$body-font-family;
+        font-size: f.$large;
+        font-weight: f.$normal;
+        font-family: f.$body;
         line-height: 1.7;
     }
 
     &__page-right {
-        font-size: var.$icon-size-medium;
-        font-weight: var.$font-weight-bold;
-        opacity: var.$light-opacity;
+        font-size: f.$xlarge;
+        font-weight: f.$bold;
+        opacity: c.$light-opacity;
     }
 
     &__dots-wrapper {
@@ -88,14 +89,14 @@ $_circle_diameter: 80px;
     }
 
     &__dot {
-        height: 8px;
         width: 8px;
-        border: 1px solid var.$white;
+        height: 8px;
+        border: 1px solid c.$white;
         border-radius: 50%;
         margin-right: 5px;
 
         &--filled {
-            background-color: var.$white;
+            background-color: c.$white;
         }
     }
 

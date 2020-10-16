@@ -1,35 +1,36 @@
 /*  || MAin Menu Layout */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
 
 
 .main-menu {
 
-    transition-duration: 100ms;
-    transition-timing-function: ease;
-    transition-property: background-color;
-    transition-delay: 0s;
     position: fixed;
     width: 100%;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 
     &__open-btn {
-        font-size: 2.4rem;
-        text-decoration: none;
-        color: white;
-        display: block;
         width: inherit;
+        font-size: f.$xlarge;
+        color: c.$white;
+        text-decoration: none;
+        display: block;
 
         &--active {
-            color: var.$primary-color;
+            color: c.$primary;
             cursor: pointer;
         }
     }
 
     &--active{
-        background-color: white;
-        color: var.$primary-color;
         box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
+        background-color: c.$white;
+        color: c.$primary;
     }
 
 }

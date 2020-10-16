@@ -1,12 +1,12 @@
 /*  || Tagged-card component */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/colors" as c;
 
 .tagged-card {
 
     padding: 2.5em;
-    border: 1px solid var.$light-grey;
+    border: 1px solid c.$light-grey;
 
     &__title {
         margin-bottom: 1em;

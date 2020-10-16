@@ -1,31 +1,32 @@
 /*  ||  Menu Component */
 /*  ------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
 
 .mobile-menu {
 
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 0;
     height: 100%;
     background-color: rgba(0,0,0,.8);
     opacity: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
     z-index: 1;
+    transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease;
-    transition-property: all;
   
     &__close-btn {
-        margin: 0;
-        padding: 0;
-        font-size: 3rem;
-        color: var.$white;
         position: absolute;
         top: 37px;
         left: 18px;
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+        color: c.$white;
         text-decoration: none;
     }
 
@@ -40,7 +41,7 @@
     }
 
     &__item-link {
-        color: var.$white;
+        color: c.$white;
         text-decoration: none;
         transition-duration: 250ms;
     }

@@ -1,14 +1,14 @@
 /*  || Resume Section Layout */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
 
 .resume {
 
     &__body {
+        font-family: f.$body;
+        font-size: f.$large;
+        font-weight: f.$normal;
         line-height: 1.7;
-        font-family: var.$body-font-family;
-        font-size: var.$font-size-large;
-        font-weight: var.$font-weight-normal;
     }
 }

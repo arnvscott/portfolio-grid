@@ -1,15 +1,16 @@
 /*  || Contact-info Component */
 /*  ------------------------- */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/colors" as c;
+@use "../abstracts/variables/fonts" as f;
 
 .contact-info {
     display: grid;
-    row-gap: 1em;
     grid-template-columns: 7em 1fr;
+    row-gap: 1em;
 
     &__name {
-        opacity: var.$light-opacity;
-        font-weight: var.$font-weight-bold;
+        opacity: c.$light-opacity;
+        font-weight: f.$bold;
     }
 }

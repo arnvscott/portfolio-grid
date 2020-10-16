@@ -1,27 +1,29 @@
 /*  || 'Page' page */
 /*  -------------- */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/colors" as c;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/application" as app;
 
 .page {
 
     &__container {
-        max-width: var.$max-width; 
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2.5em 1em;
         width: 100%;
+        padding: 2.5em 1em;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: app.$max-width; 
     }
 
     &__section-title {
-        font-size: var.$section-title-font-size;
-        font-weight: var.$font-weight-normal;
         margin-bottom: 1em;
+        font-size: app.$section-title-fs;
+        font-weight: f.$normal;
     }
 
     &__section-subtitle {
         margin-bottom: 2.5em;
-        font-size: var.$font-size-small;
+        font-size: f.$small;
         letter-spacing: 0.5rem;
     }
 }

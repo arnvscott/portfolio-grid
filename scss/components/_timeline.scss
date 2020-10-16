@@ -1,7 +1,9 @@
 /*  || Timeline Component    */
 /*  ------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
+@use "../abstracts/variables/colors" as c;
+
 
 $_dot-size: 1.2rem;
 
@@ -12,7 +14,7 @@ $_dot-size: 1.2rem;
 
     &__item {
         padding: 0 0 3em 2em;
-        border-left: 2px solid var.$primary-color;
+        border-left: 2px solid c.$primary;
 
         &:last-child {
             padding-bottom: 0;
@@ -23,32 +25,32 @@ $_dot-size: 1.2rem;
         width: $_dot-size;
         height: $_dot-size;
         padding: 0;
-        border: 2px var.$primary-color solid;
+        border: 2px c.$primary solid;
         border-radius: 50%;
         margin: 0;
+        background-color: c.$white;
         position: absolute;
         left: 12px;
-        background-color: var.$white;
     }
 
     &__site {
         margin-bottom: 0.5em;
-        color: var.$primary-color;
-        font-family: var.$heading-font-family;
-        font-size: var.$font-size-small;
-        font-weight: var.$font-weight-bold;
+        font-family: f.$heading;
+        font-size: f.$small;
+        font-weight: f.$bold;
+        color: c.$primary;
     }
 
     &__year {
         margin-bottom: 0.7em;
-        font-family: var.$heading-font-family;
-        font-size: var.$font-size-small; 
-        font-weight: var.$font-weight-normal;
+        font-family: f.$heading;
+        font-size: f.$small; 
+        font-weight: f.$normal;
     }
 
     &__detail {
-        font-family: var.$body-font-family;
-        font-size: var.$font-size-medium;
+        font-family: f.$body;
+        font-size: f.$medium;
         line-height: 1.7;  
     }
 }

@@ -1,23 +1,23 @@
 /*  || Introduction Section Layout */
 /*  ------------------------------ */
 
-@use "../abstracts/variables" as var;
+@use "../abstracts/variables/fonts" as f;
 
 .introduction {
 
     &__body {
+        font-family: f.$body;
+        font-size: f.$medium;
+        font-weight: f.$normal;
         line-height: 1.7;
-        font-family: var.$body-font-family;
-        font-size: var.$font-size-medium;
-        font-weight: var.$font-weight-normal;
     }
 
     &__btn {
         padding: 1em;
         margin-top: 2em;
-        font-family: var.$body-font-family;
-        font-size: var.$font-size-small;
-        font-weight: var.$font-weight-bold;
+        font-family: f.$body;
+        font-size: f.$small;
+        font-weight: f.$bold;
     }
 
     &__btn i {

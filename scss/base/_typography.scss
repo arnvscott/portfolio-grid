@@ -1,13 +1,14 @@
 /**
  * _typography partial
  */
-@use "../abstracts/variables" as var;
+ @use "../abstracts/variables/fonts" as f;
+ @use "../abstracts/variables/colors" as c;
 
  html {
      font-size: 62.5%;
  }
  body {
-    color: var.$text-color;
-    font-family: var.$heading-font-family;
-    font-size: var.$font-size-medium;
+    color: c.$text;
+    font-family: f.$heading;
+    font-size: f.$medium;
   }
